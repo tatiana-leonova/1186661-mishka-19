@@ -1,0 +1,6 @@
+.site-list__item {
+  @include text(17px, 24px);
+  font-family: $font;
+  font-weight: 700;
+  color: $black;
+}

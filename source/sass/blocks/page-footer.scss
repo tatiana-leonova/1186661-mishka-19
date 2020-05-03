@@ -1,0 +1,5 @@
+.page-footer__logo-link {
+  @media (max-width: $width-mobile-only) {
+    display: none;
+  }
+}

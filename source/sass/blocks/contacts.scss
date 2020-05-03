@@ -1,0 +1,35 @@
+.contacts__title {
+  @include text(18px, 30px);
+  font-weight: 700;
+  color: $black;
+
+  @media (min-width: $width-tablet) {
+    @include text(43px, 50px);
+  }
+
+  @media (min-width: $width-desktop) {
+    @include text(53px, 57px);
+  }
+}
+
+.contacts__email,
+.contacts__adress {
+  @include text(15px, 30px);
+  color: $text;
+
+  @media (min-width: $width-tablet) {
+    @include text(17px, 30px);
+  }
+}
+
+.contacts__map-image {
+  @media (min-width: $width-tablet) {
+    width: 768px;
+    height: 457px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 525px;
+    height: 457px;
+  }
+}

@@ -1,0 +1,22 @@
+.form-block__title {
+  @include text(27px, 30px);
+  font-weight: 700;
+  color: $black;
+
+  @media (min-width: $width-tablet) {
+    @include text(43px, 50px);
+  }
+
+  @media (min-width: $width-desktop) {
+    @include text(53px, 57px);
+  }
+}
+
+.form-block__text {
+  @include text(13px, 24px);
+  color: $text;
+
+  @media (min-width: $width-tablet) {
+    @include text(17px, 30px);
+  }
+}

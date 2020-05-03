@@ -1,0 +1,11 @@
+.main-nav__logo-img {
+  @media (min-width: $width-tablet) {
+    width: 112px;
+    height: 46px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 149px;
+    height: 72px;
+  }
+}

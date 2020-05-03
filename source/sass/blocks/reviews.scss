@@ -1,0 +1,41 @@
+.reviews__title {
+  @include text(25px, 30px);
+  font-weight: 700;
+  color: $black;
+
+  @media (min-width: $width-tablet) {
+    @include text(43px, 50px);
+  }
+
+  @media (min-width: $width-desktop) {
+    @include text(53px, 57px);
+  }
+}
+
+.reviews__text {
+  @include text(15px, 30px);
+  color: $text;
+
+  @media (min-width: $width-tablet) {
+    @include text(17px, 30px);
+  }
+}
+
+.reviews__author-name {
+  @include text(17px, 24px);
+  color: $black;
+  font-weight: 700;
+
+  @media (min-width: $width-tablet) {
+    @include text(18px, 24px);
+  }
+
+  @media (min-width: $width-desktop) {
+    @include text(18px, 24px);
+  }
+}
+
+.reviews__author-link {
+  @include text(17px, 30px);
+  color: $text;
+}

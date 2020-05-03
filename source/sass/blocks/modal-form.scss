@@ -1,0 +1,36 @@
+.modal-form__title {
+  @include text(25px, 30px);
+  font-weight: 700;
+  color: $black;
+  text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    @include text(30px, 57px);
+  }
+
+  @media (min-width: $width-desktop) {
+    @include text(53px, 57px);
+  }
+}
+
+.modal-form__text {
+  @include text(15px, 30px);
+  color: $text;
+
+  @media (min-width: $width-tablet) {
+    @include text(27px, 30px);
+  }
+}
+
+.modal-form__label {
+  @include text(17px, 16px);
+  color: $text;
+  font-weight: 700;
+}
+
+.modal-form__button {
+  @include text(17px, 16px);
+  color: $white;
+  font-weight: 700;
+  background-color: $seafoam;
+}

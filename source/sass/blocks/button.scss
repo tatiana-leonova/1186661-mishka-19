@@ -1,0 +1,6 @@
+.button {
+  @include text(17px, 20px);
+  font-weight: 700;
+  color: $text;
+  text-transform: uppercase;
+}

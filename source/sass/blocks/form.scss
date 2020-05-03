@@ -1,0 +1,41 @@
+.form__legend {
+  @include text(17px, 16px);
+  font-weight: 700;
+  color: $seafoam;
+  text-transform: uppercase;
+}
+
+.form__label {
+  @include text(17px, 18px);
+  font-weight: 700;
+  color: $black;
+
+  @media (min-width: $width-tablet) {
+    @include text(19px, 18px);
+  }
+}
+
+.form__label--contacts {
+  @include text(17px, 16px);
+  color: $seafoam;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form__input::placeholder {
+  @include text(17px, 18px);
+  color: $placeholder;
+
+  @media (min-width: $width-tablet) {
+    @include text(19px, 18px);
+  }
+}
+
+.form__required-fields {
+  @include text(14px, 16px);
+  color: $text;
+
+  @media (min-width: $width-tablet) {
+    @include text(17px, 30px);
+  }
+}

@@ -1,0 +1,30 @@
+.production__title {
+  @include text(17px, 24px);
+  font-weight: 700;
+  color: $black;
+
+  @media (min-width: $width-tablet) {
+    @include text(20px, 24px);
+  }
+}
+
+.production__image {
+  @media (min-width: $width-tablet) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 682px;
+    height: 455px;
+  }
+}
+
+.production__text {
+  @include text(13px, 24px);
+  color: $text;
+
+  @media (min-width: $width-tablet) {
+    @include text(15px, 30px);
+  }
+}
