@@ -33,6 +33,11 @@
   }
 }
 
+.product__wrapper-price {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product__price {
   @include text(15px, 24px);
   font-weight: 700;

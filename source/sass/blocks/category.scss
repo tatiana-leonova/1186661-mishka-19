@@ -1,3 +1,20 @@
+.category__title-wrapper {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 283px;
+
+  @media (min-width: $width-tablet) {
+    min-height: 570px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+  }
+
+  @media (min-width: $width-desktop) {
+    min-height: 570px;
+    background-image: url("../img/hero-desctop@1x.jpg");
+  }
+}
+
 .category__title {
   @include text(27px, 30px);
   font-family: $font;
@@ -28,6 +45,7 @@
 .category__item-link {
   color: $white;
   text-decoration: none;
+  display: flex;
 }
 
 .category__item-title {
@@ -38,4 +56,8 @@
   @media (min-width: $width-tablet) {
     @include text(20px, 30px);
   }
+}
+
+.category__item-icon {
+  opacity: 50%;
 }

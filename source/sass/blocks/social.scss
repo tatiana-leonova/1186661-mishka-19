@@ -1,3 +1,4 @@
 .social__list {
   @include no-list;
+  display: flex;
 }

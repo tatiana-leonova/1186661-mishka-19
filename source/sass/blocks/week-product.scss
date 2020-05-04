@@ -13,7 +13,7 @@
 }
 
 .week-product__subtitle {
-  @include text(25px, 30px);
+  @include text(17px, 20px);
   font-weight: 700;
   color: $seafoam;
   text-transform: uppercase;
@@ -35,6 +35,15 @@
 .week-product__characteristics {
   @include text(15px, 20px);
   color: $text;
+  border-collapse: collapse;
+}
+
+.week-product__characteristics-title {
+  border-bottom: 1px solid $border-gray;
+}
+
+.week-product__characteristics-value {
+  border-bottom: 1px solid $border-gray;
 }
 
 .week-product__price {

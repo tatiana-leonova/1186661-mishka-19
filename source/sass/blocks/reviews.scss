@@ -41,6 +41,7 @@
 
 .reviews__author-link {
   @include text(17px, 30px);
+  display: block;
   color: $text;
   text-decoration: none;
 }
