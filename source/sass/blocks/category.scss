@@ -22,3 +22,8 @@
     @include text(20px, 30px);
   }
 }
+
+.category__item-link {
+  color: $white;
+  text-decoration: none;
+}

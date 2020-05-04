@@ -1,3 +1,7 @@
+.catalog__list {
+  @include no-list;
+}
+
 .catalog__title {
   @include text(27px, 30px);
   font-weight: 700;

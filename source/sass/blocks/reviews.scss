@@ -12,6 +12,10 @@
   }
 }
 
+.reviews__item {
+  margin: 0;
+}
+
 .reviews__text {
   @include text(15px, 30px);
   color: $text;
@@ -38,4 +42,5 @@
 .reviews__author-link {
   @include text(17px, 30px);
   color: $text;
+  text-decoration: none;
 }

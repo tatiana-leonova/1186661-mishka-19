@@ -1,3 +1,9 @@
+.modal-form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .modal-form__title {
   @include text(25px, 30px);
   font-weight: 700;

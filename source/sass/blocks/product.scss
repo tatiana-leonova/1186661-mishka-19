@@ -10,6 +10,10 @@
   }
 }
 
+.product__title-link {
+  text-decoration: none;
+}
+
 .product__title {
   @include text(17px, 24px);
   font-weight: 700;

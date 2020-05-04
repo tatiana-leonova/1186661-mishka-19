@@ -22,6 +22,10 @@
   }
 }
 
+.contacts__email-title {
+  text-decoration: none;
+}
+
 .contacts__map-image {
   @media (min-width: $width-tablet) {
     width: 768px;

@@ -2,7 +2,6 @@
   @include text(17px, 24px);
   font-family: $font;
   font-weight: 700;
-  color: $black;
 
   @media (min-width: $width-tablet-only) {
     @include text(15px, 24px);
@@ -13,4 +12,9 @@
   @media (min-width: $width-desktop) {
     @include text(15px, 24px);
   }
+}
+
+.site-list__item-link {
+  color: $black;
+  text-decoration: none;
 }
