@@ -1,9 +1,15 @@
+.site-list--hidden {
+  @media (max-width: $width-mobile-only) {
+    display: none;
+  }
+}
+
 .site-list__item {
   @include text(17px, 24px);
   font-family: $font;
   font-weight: 700;
 
-  @media (min-width: $width-tablet-only) {
+  @media (max-width: $width-tablet-only) {
     @include text(15px, 24px);
   }
 }

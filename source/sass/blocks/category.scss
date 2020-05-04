@@ -13,7 +13,24 @@
   }
 }
 
-.category__item {
+.category__list {
+  @include no-list;
+}
+
+.category__item--interior {
+  background-color: $seafoam;
+}
+
+.category__item--toy {
+  background-color: $grenny;
+}
+
+.category__item-link {
+  color: $white;
+  text-decoration: none;
+}
+
+.category__item-title {
   @include text(19px, 24px);
   font-weight: 700;
   color: $white;
@@ -21,9 +38,4 @@
   @media (min-width: $width-tablet) {
     @include text(20px, 30px);
   }
-}
-
-.category__item-link {
-  color: $white;
-  text-decoration: none;
 }

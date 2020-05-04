@@ -1,7 +1,11 @@
-.site-list__item {
+.user-list__item {
   @include text(17px, 24px);
   font-family: $font;
   font-weight: 700;
+
+  @media (max-width: $width-tablet-only) {
+    @include text(15px, 24px);
+  }
 }
 
 .user-list__item-link {
