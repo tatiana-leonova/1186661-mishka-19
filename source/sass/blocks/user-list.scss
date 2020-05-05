@@ -2,13 +2,15 @@
   @include text(17px, 24px);
   font-family: $font;
   font-weight: 700;
-
-  @media (max-width: $width-tablet-only) {
-    @include text(15px, 24px);
-  }
 }
 
 .user-list__item-link {
   color: $black;
   text-decoration: none;
+
+  @media (max-width: $width-mobile-only) {
+    display: block;
+    padding: 27px 30px 27px 74px;
+    border-bottom: 1px solid $border-gray;
+  }
 }

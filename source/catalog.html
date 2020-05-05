@@ -63,8 +63,13 @@
   </header>
 
   <main class="page-main">
-    <section class="catalog">
-      <h1 class="catalog__title">Каталог товаров</h1>
+    <section class="header-block">
+      <div class="header-block__wrapper container">
+      <h1 class="header-block__title">Каталог товаров</h1>
+    </div>
+      </section>
+      <section class="catalog container">
+        <h2 class="visually-hidden">Список товаров интернет-магазина Мишка</h2>
       <ul class="catalog__list">
         <li class="catalog__item product">
           <a class="product__image-link" href="#">
@@ -162,7 +167,7 @@
       </ul>
     </section>
 
-    <section class="production">
+    <section class="production container">
       <h2 class="production__title">Процесс производства</h2>
       <div class="production__video">
         <picture>
@@ -186,6 +191,7 @@
   </main>
 
   <footer class="page-footer">
+    <div class="page-footer__wrapper container">
     <a class="page-footer__logo-link" href="">
       <svg width="112.389px" height="46.087px" viewBox="19.137 15.003 112.389 46.087"
         enable-background="new 19.137 15.003 112.389 46.087" xml:space="preserve">
@@ -264,6 +270,7 @@
         </svg>
       </span>
     </a>
+  </div>
   </footer>
 
   <div class="cart-modal">

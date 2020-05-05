@@ -1,6 +1,8 @@
-.page-footer {
-  display: flex;
-  justify-content: space-between;
+.page-footer__wrapper {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo-link {

@@ -2,11 +2,25 @@
   position: relative;
 }
 
+.main-nav__wrapper-logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $border-gray;
+  padding: 22px 30px 21px;
+}
+
 .main-nav__list {
   @include no-list;
 }
 
 .main-nav__logo-img {
+  display: block;
+
+  @media (max-width: $width-mobile-only) {
+    margin: 0 auto;
+  }
+
   @media (min-width: $width-tablet) {
     width: 112px;
     height: 46px;

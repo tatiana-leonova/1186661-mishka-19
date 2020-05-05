@@ -1,0 +1,13 @@
+.header-block__title {
+  @include text(27px, 30px);
+  font-weight: 700;
+  color: $black;
+
+  @media (min-width: $width-tablet) {
+    @include text(43px, 50px);
+  }
+
+  @media (min-width: $width-desktop) {
+    @include text(53px, 57px);
+  }
+}
