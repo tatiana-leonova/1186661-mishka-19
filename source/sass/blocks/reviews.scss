@@ -45,3 +45,27 @@
   color: $text;
   text-decoration: none;
 }
+
+.reviews__arrow-wrapper {
+  display: flex;
+}
+
+.reviews__arrow {
+  display: block;
+  background-color: $white;
+  border: 1px solid $border-gray;
+  width: 50%;
+  height: 50px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

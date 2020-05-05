@@ -1,5 +1,11 @@
 .about-us__list {
   @include no-list;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .about-us__title {
@@ -23,5 +29,6 @@
 
   @media (min-width: $width-tablet) {
     @include text(20px, 22px);
+    width: 44%;
   }
 }

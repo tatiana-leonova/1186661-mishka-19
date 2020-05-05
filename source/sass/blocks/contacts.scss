@@ -26,6 +26,22 @@
   text-decoration: none;
 }
 
+.contacts__email-value {
+  color: $black;
+  text-decoration: none;
+  border-bottom: 1px solid $seafoam-two;
+  padding-bottom: 5px;
+
+  &:hover,
+  &:focus {
+    color: $seafoam-two;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .contacts__map-image {
   display: block;
   margin: 0 auto;

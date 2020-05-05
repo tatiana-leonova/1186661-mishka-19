@@ -39,20 +39,60 @@
 
 .category__list {
   @include no-list;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.category__item {
+  padding: 20px 30px;
+
+  @media (min-width: $width-tablet) {
+    width: 334px;
+  }
 }
 
 .category__item--interior {
   background-color: $seafoam;
+
+  &:hover,
+  &:active {
+    background-color: #59d5bc;
+  }
+
+  &:active {
+    color: 0.3;
+  }
 }
 
 .category__item--toy {
   background-color: $grenny;
+
+  &:hover,
+  &:active {
+    background-color: #46c1ae;
+
+    svg {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    color: 0.3;
+
+    svg {
+      opacity: 0.3;
+    }
+  }
 }
 
 .category__item-link {
   color: $white;
   text-decoration: none;
   display: flex;
+  justify-content: space-between;
 }
 
 .category__item-title {
@@ -66,5 +106,5 @@
 }
 
 .category__item-icon {
-  opacity: 50%;
+  opacity: 0.5;
 }

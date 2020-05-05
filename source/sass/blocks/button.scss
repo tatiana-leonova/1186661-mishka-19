@@ -1,8 +1,25 @@
 .button {
   @include text(17px, 20px);
   display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 350px;
+  padding: 14px 10px;
   font-weight: 700;
   color: $text;
+  background-color: $white;
+  border: 2px solid $text;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: $text;
+    color: $white;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
