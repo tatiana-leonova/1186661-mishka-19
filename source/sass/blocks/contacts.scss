@@ -12,6 +12,12 @@
   }
 }
 
+.contacts__wrapper {
+  @media (min-width: $width-tablet) {
+    display: flex;
+  }
+}
+
 .contacts__email,
 .contacts__adress {
   @include text(15px, 30px);
@@ -19,6 +25,8 @@
 
   @media (min-width: $width-tablet) {
     @include text(17px, 30px);
+    display: flex;
+    width: 50%;
   }
 }
 
