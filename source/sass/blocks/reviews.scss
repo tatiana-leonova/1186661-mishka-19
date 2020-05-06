@@ -3,9 +3,24 @@
     position: relative;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $width-desktop) {
+    min-height: 547px;
+  }
+}
+
+.reviews__wrapper {
+  margin-left: 150px;
+
+  @media (min-width: $width-tablet) {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 150px;
   }
 }
 
@@ -77,6 +92,10 @@
     right: 30px;
     width: 175px;
     bottom: 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    bottom: 220px;
   }
 }
 
