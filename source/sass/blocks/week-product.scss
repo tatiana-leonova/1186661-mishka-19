@@ -28,7 +28,7 @@
     width: 44%;
   }
 
-  @media (min-width: $width-tablet) {
+  @media (min-width: $width-desktop) {
     padding-left: 150px;
   }
 }
@@ -125,5 +125,11 @@
 
   @media (min-width: $width-tablet) {
     @include text(20px, 24px);
+  }
+}
+
+.week-product__button {
+  @media (max-width: $width-mobile-only) {
+    margin: 0 auto;
   }
 }

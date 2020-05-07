@@ -103,13 +103,17 @@
 
 .contacts__button-wrapper {
   @media (min-width: $width-desktop) {
-    margin-left: -260px;
+    margin-left: 150px;
   }
 }
 
 .contacts__button {
   display: block;
   text-align: center;
+
+  @media (max-width: $width-tablet-only) {
+    margin: 0 auto;
+  }
 
   @media (min-width: $width-desktop) {
     width: 230px;
