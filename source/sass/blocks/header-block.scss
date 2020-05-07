@@ -1,7 +1,13 @@
+.header-block__wrapper {
+  background-color: $bc-grey;
+  padding: 30px;
+}
+
 .header-block__title {
   @include text(27px, 30px);
   font-weight: 700;
   color: $black;
+  text-align: center;
 
   @media (min-width: $width-tablet) {
     @include text(43px, 50px);

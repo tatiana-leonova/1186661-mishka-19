@@ -1,5 +1,11 @@
 .catalog__list {
   @include no-list;
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .catalog__title {
