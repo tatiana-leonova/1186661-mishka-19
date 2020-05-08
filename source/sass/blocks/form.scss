@@ -1,7 +1,20 @@
+.form__wrapper {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    // flex-wrap: wrap;
+  }
+}
+
 .form__fieldset {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.form__fieldset--grey {
+  @media (min-width: $width-tablet) {
+    background-color: $border-gray;
+  }
 }
 
 .form__legend {
@@ -9,6 +22,27 @@
   font-weight: 700;
   color: $seafoam;
   text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    // align-items: flex-start;
+    margin: 0;
+    width: 25%;
+  }
+}
+
+.form__inner--color {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 75%;
+  }
+}
+
+.form__row--color {
+  @media (min-width: $width-tablet) {
+    min-width: 240px;
+  }
 }
 
 .form__label {
@@ -21,11 +55,48 @@
   }
 }
 
+.form__inner {
+  @media (min-width: $width-tablet) {
+    width: 75%;
+  }
+}
+
+.form__row--name {
+  display: flex;
+}
+
+.form__input--name {
+  flex-grow: 1;
+  border: 0;
+  border-bottom: 2px solid $black;
+}
+
+.form__label--name {
+  display: block;
+  margin-right: 20px;
+}
+
+.form__row--contacts {
+  display: flex;
+}
+
 .form__label--contacts {
   @include text(17px, 16px);
   color: $seafoam;
   font-weight: 700;
   text-transform: uppercase;
+  display: block;
+
+  @media (min-width: $width-tablet) {
+    width: 25%;
+  }
+}
+
+.form__input--contacts {
+  flex-grow: 1;
+  border: 0;
+  border-bottom: 2px solid $black;
+  background-color: inherit;
 }
 
 .form__input::placeholder {
@@ -43,5 +114,27 @@
 
   @media (min-width: $width-tablet) {
     @include text(17px, 30px);
+    order: 2;
+  }
+}
+
+.form__input--textarea {
+  width: 100%;
+  border: 2px solid $black;
+}
+
+.form__wrapper-button {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.form__button {
+  @media (min-width: $width-tablet) {
+    width: 230px;
+    display: block;
+    order: 1;
   }
 }
