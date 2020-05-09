@@ -1,3 +1,9 @@
+.user-list {
+  @media (min-width: $width-tablet) {
+    order: 2;
+  }
+}
+
 .user-list__item {
   @include text(17px, 24px);
   font-family: $font;
@@ -13,4 +19,26 @@
     padding: 27px 30px 27px 74px;
     border-bottom: 1px solid $border-gray;
   }
+}
+
+.user-list__item-link--search {
+  @media (min-width: $width-tablet) {
+    padding: 44px 40px;
+    border-left: 1px solid $border-gray;
+    border-right: 1px solid $border-gray;
+  }
+}
+
+.user-list__item-link--card {
+  padding: 30px 50px 30px 85px;
+}
+
+.user-list__item-text--search {
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
+.user-list__item-icon {
+  opacity: 0.2;
 }

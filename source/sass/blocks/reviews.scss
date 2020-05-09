@@ -11,12 +11,11 @@
 }
 
 .reviews__wrapper {
-  margin-left: 150px;
-
   @media (min-width: $width-tablet) {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin-left: 150px;
   }
 
   @media (min-width: $width-desktop) {

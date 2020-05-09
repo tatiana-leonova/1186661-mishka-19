@@ -1,17 +1,35 @@
 .main-nav {
   position: relative;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .main-nav__wrapper-logo {
   position: relative;
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid $border-gray;
+  // display: flex;
+  // justify-content: center;
   padding: 22px 30px 21px;
+
+  @media (max-width: $width-mobile-only) {
+    border-bottom: 1px solid $border-gray;
+  }
+
+  @media (min-width: $width-tablet) {
+    order: 1;
+    flex-grow: 1;
+  }
 }
 
 .main-nav__list {
   @include no-list;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+  }
 }
 
 .main-nav__logo-img {
@@ -59,8 +77,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 11px;
-  right: 5px;
+  top: 30px;
+  right: 20px;
   display: block;
   width: 20px;
   height: 14px;
@@ -80,5 +98,17 @@
 }
 
 .main-nav__text {
-  display: none;
+  @media (max-width: $width-mobile-only) {
+    display: none;
+  }
+
+  @media (min-width: $width-tablet) {
+    display: block;
+    text-align: right;
+    order: 4;
+    width: 48%;
+    padding: 18px 50px;
+    margin: 0;
+    background-color: $bc-grey;
+  }
 }
