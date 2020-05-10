@@ -17,6 +17,8 @@
 }
 
 .production__title {
+  position: relative;
+
   @include text(17px, 24px);
   font-weight: 700;
   color: $black;
@@ -30,7 +32,21 @@
   @media (min-width: $width-desktop) {
     width: 369px;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-video.svg");
+    width: 32px;
+    height: 28px;
+    top: -5px;
+    left: 0;
+  }
 }
+
+// .production__video {
+//   position: relative;
+// }
 
 .production__image {
   display: block;
@@ -53,6 +69,15 @@
     width: 682px;
     height: 455px;
   }
+}
+
+.production__button-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .production__wrapper-text-button {
