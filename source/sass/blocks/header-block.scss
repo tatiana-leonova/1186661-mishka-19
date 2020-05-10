@@ -1,6 +1,22 @@
 .header-block__wrapper {
+  position: relative;
   background-color: $bc-grey;
   padding: 30px;
+
+  &::after {
+    @media (min-width: $width-tablet) {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      height: 17px;
+      background-size: 768px 24px;
+      // background-position-x: -20px;
+    }
+  }
 }
 
 .header-block__title {

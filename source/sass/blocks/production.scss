@@ -4,7 +4,6 @@
 
 .production__wrapper {
   border: 1px solid $border-gray;
-  padding: 0 35px;
 
   @media (min-width: $width-tablet) {
     display: flex;
@@ -21,6 +20,7 @@
   @include text(17px, 24px);
   font-weight: 700;
   color: $black;
+  padding: 0 35px;
 
   @media (min-width: $width-tablet) {
     @include text(20px, 24px);
@@ -35,6 +35,7 @@
 .production__image {
   display: block;
   margin: 0 auto;
+  width: 100%;
 
   @media (min-width: $width-tablet) {
     width: 668px;
@@ -54,13 +55,21 @@
   }
 }
 
+.production__wrapper-text-button {
+  padding: 0 35px;
+
+  @media (min-width: $width-tablet) {
+    order: 3;
+  }
+}
+
 .production__text {
   @include text(13px, 24px);
   color: $text;
 
   @media (min-width: $width-tablet) {
     @include text(15px, 30px);
-    order: 3;
+    // order: 3;
   }
 
   @media (min-width: $width-desktop) {
@@ -70,7 +79,7 @@
 
 .production__button {
   @media (min-width: $width-tablet) {
-    order: 4;
+    // order: 4;
     margin: none;
   }
 }
