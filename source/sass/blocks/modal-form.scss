@@ -1,3 +1,7 @@
+.modal-form {
+  text-align: center;
+}
+
 .modal-form__fieldset {
   border: none;
   padding: 0;
@@ -39,4 +43,5 @@
   color: $white;
   font-weight: 700;
   background-color: $seafoam;
+  border: none;
 }

@@ -2,7 +2,7 @@
   margin-bottom: 30px;
   border: 1px solid $border-gray;
 
-  @media (min-width: $width-tablet) and (max-width: $width-desktop) {
+  @media (min-width: $width-tablet) and (max-width: $width-tablet-only) {
     display: flex;
     justify-content: space-between;
   }
@@ -30,7 +30,7 @@
 .product__wrapper-description {
   padding: 0 25px;
 
-  @media (min-width: $width-tablet) and (max-width: $width-desktop) {
+  @media (min-width: $width-tablet) and (max-width: $width-tablet-only) {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -84,7 +84,7 @@
 }
 
 .production__button {
-  @media (min-width: $width-tablet) and (max-width: $width-desktop) {
+  @media (min-width: $width-tablet) and (max-width: $width-tablet-only) {
     margin: 0 auto;
   }
 }

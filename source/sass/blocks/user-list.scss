@@ -13,6 +13,7 @@
 .user-list__item-link {
   color: $black;
   text-decoration: none;
+  position: relative;
 
   @media (max-width: $width-mobile-only) {
     display: block;
@@ -41,4 +42,10 @@
 
 .user-list__item-icon {
   opacity: 0.2;
+
+  @media (max-width: $width-mobile-only) {
+    position: absolute;
+    top: 40%;
+    left: 35px;
+  }
 }
