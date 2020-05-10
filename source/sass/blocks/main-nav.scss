@@ -5,13 +5,15 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: -60px;
+    // margin-bottom: -60px;
+    // background-image: linear-gradient(to bottom, $white 90px, $bc-grey 90px);
   }
 
   @media (min-width: $width-desktop) {
     max-width: $width-desktop;
     margin: 0 auto;
-    margin-bottom: -70px;
+    // margin-bottom: -70px;
+    // background-image: linear-gradient(to bottom, $white 90px, $bc-grey 90px);
   }
 }
 

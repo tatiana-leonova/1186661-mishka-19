@@ -1,0 +1,11 @@
+.page-header {
+  @media (min-width: $width-tablet) {
+    background-image: linear-gradient(to bottom, $white 100px, $bc-grey 100px);
+  }
+}
+
+.page-header--index {
+  @media (min-width: $width-tablet) {
+    background-image: linear-gradient(to bottom, $white 100px, #f9f9f9 100px);
+  }
+}
