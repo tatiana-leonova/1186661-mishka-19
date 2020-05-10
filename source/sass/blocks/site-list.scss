@@ -5,8 +5,9 @@
 
   @media (min-width: $width-desktop) {
     order: 5;
-    background-color: $bc-grey;
+    // background-color: $bc-grey;
     padding: 22px 0 20px 50px;
+    max-width: 40%;
   }
 }
 
@@ -15,7 +16,7 @@
     order: 3;
     padding: 22px 0 20px 50px;
     width: 52%;
-    background-color: $bc-grey;
+    // background-color: $bc-grey;
   }
 
   @media (min-width: $width-desktop) {
@@ -27,13 +28,13 @@
 
 .site-list--index {
   @media (min-width: $width-tablet) {
-    background-color: #f9f9f9;
+    // background-color: #f9f9f9;
   }
 }
 
 .site-list--index-top {
   @media (min-width: $width-tablet) {
-    background-color: #f9f9f9;
+    // background-color: #f9f9f9;
   }
 
   @media (min-width: $width-desktop) {
