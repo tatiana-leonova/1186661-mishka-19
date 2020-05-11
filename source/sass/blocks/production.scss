@@ -44,9 +44,13 @@
   }
 }
 
-// .production__video {
-//   position: relative;
-// }
+.production__video {
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
 
 .production__image {
   display: block;
@@ -57,12 +61,6 @@
     width: 668px;
     height: 455px;
     order: 1;
-
-    @media (min-width: $width-desktop) {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
   }
 
   @media (min-width: $width-desktop) {
