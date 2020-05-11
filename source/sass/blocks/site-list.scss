@@ -18,7 +18,7 @@
 .site-list--top {
   @media (min-width: $width-tablet) {
     order: 3;
-    padding: 22px 0 20px 50px;
+    padding: 17px 0 20px 50px;
     width: 52%;
     // background-color: $bc-grey;
   }
@@ -40,6 +40,7 @@
   @media (min-width: $width-tablet) {
     @include text(15px, 24px);
     background-color: transparent;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $width-desktop) {

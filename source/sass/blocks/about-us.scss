@@ -27,6 +27,10 @@
 
   @media (min-width: $width-tablet) {
     @include text(43px, 50px);
+    margin-top: 0;
+    padding-top: 49px;
+    margin-left: -5px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: $width-desktop) {
@@ -45,7 +49,44 @@
 
   @media (min-width: $width-tablet) {
     @include text(20px, 22px);
-    width: 44%;
+    width: 50%;
+    margin-bottom: 45px;
+  }
+}
+
+.about-us__item--flower {
+  @media (min-width: $width-tablet) {
+    order: 1;
+  }
+}
+
+.about-us__item--ball {
+  @media (min-width: $width-tablet) {
+    order: 2;
+  }
+}
+
+.about-us__item--money {
+  @media (min-width: $width-tablet) {
+    order: 3;
+  }
+}
+
+.about-us__item--rocket {
+  @media (min-width: $width-tablet) {
+    order: 4;
+  }
+
+  .about-us__item--heart {
+    @media (min-width: $width-tablet) {
+      order: 5;
+    }
+  }
+
+  .about-us__item--gift {
+    @media (min-width: $width-tablet) {
+      order: 6;
+    }
   }
 }
 

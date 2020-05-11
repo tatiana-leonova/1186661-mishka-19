@@ -50,6 +50,7 @@
   @media (min-width: $width-tablet) {
     width: 112px;
     height: 46px;
+    margin-left: 20px;
   }
 
   @media (min-width: $width-desktop) {
@@ -117,8 +118,10 @@
     text-align: right;
     order: 4;
     width: 48%;
-    padding: 18px 50px;
+    padding-right: 50px;
+    padding-left: 50px;
     margin: 0;
+    margin-bottom: 10px;
     // max-width: 40%;
   }
 

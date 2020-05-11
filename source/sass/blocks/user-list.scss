@@ -24,7 +24,7 @@
 
 .user-list__item-link--search {
   @media (min-width: $width-tablet) {
-    padding: 44px 40px;
+    padding: 33px 31px;
     border-left: 1px solid $border-gray;
     border-right: 1px solid $border-gray;
   }
@@ -33,6 +33,7 @@
 .user-list__item-link--card {
   @media (min-width: $width-tablet) {
     padding: 30px 50px 30px 85px;
+    width: 318px;
   }
 }
 
@@ -49,5 +50,13 @@
     position: absolute;
     top: 40%;
     left: 30px;
+  }
+}
+
+.user-list__item-icon--card {
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    top: 40%;
+    left: 33px;
   }
 }

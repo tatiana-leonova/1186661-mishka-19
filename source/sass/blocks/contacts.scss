@@ -2,6 +2,10 @@
   position: relative;
   margin-bottom: 39px;
 
+  @media (min-width: $width-tablet) {
+    padding-top: 110px;
+  }
+
   @media (min-width: $width-desktop) {
     min-height: 457px;
     max-width: $width-desktop;
@@ -12,6 +16,10 @@
 
 .contacts_wrapper {
   margin-bottom: 35px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 26px;
+  }
 
   @media (min-width: $width-desktop) {
     margin-left: 150px;
@@ -29,9 +37,22 @@
   font-weight: 700;
   color: $black;
   margin-bottom: 26px;
+  position: relative;
 
   @media (min-width: $width-tablet) {
     @include text(43px, 50px);
+    margin: 0;
+    margin-bottom: 49px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -15px;
+      right: 3px;
+      width: 47px;
+      height: 82px;
+      background-image: url("../img/icon-flag.svg");
+    }
   }
 
   @media (min-width: $width-desktop) {
@@ -67,6 +88,10 @@
 .contacts__email-title {
   text-decoration: none;
   margin-right: 30px;
+
+  @media (min-width: $width-tablet) {
+    margin-right: 24px;
+  }
 }
 
 .contacts__email-value {
@@ -87,10 +112,18 @@
 
 .contacts__adress-title {
   margin-right: 30px;
+
+  @media (min-width: $width-tablet) {
+    margin-right: 24px;
+  }
 }
 
 .contacts__adress-value {
   width: 150px;
+
+  @media (min-width: $width-tablet) {
+    width: 250px;
+  }
 }
 
 .contacts__map {
@@ -107,6 +140,14 @@
     background-image: url("../img/icon-map-pin.svg");
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media (min-width: $width-tablet) {
+      top: 137px;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 55px;
   }
 
   @media (min-width: $width-desktop) {
@@ -143,6 +184,10 @@
 
   @media (max-width: $width-tablet-only) {
     margin: 0 auto;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 230px;
   }
 
   @media (min-width: $width-desktop) {
