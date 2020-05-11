@@ -31,7 +31,9 @@
 }
 
 .user-list__item-link--card {
-  padding: 30px 50px 30px 85px;
+  @media (min-width: $width-tablet) {
+    padding: 30px 50px 30px 85px;
+  }
 }
 
 .user-list__item-text--search {
@@ -46,6 +48,6 @@
   @media (max-width: $width-mobile-only) {
     position: absolute;
     top: 40%;
-    left: 35px;
+    left: 30px;
   }
 }

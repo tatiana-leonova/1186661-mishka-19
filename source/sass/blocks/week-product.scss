@@ -1,5 +1,6 @@
 .week-product {
   position: relative;
+  margin-bottom: 35px;
 
   @media (min-width: $width-desktop) {
     min-height: 650px;
@@ -10,12 +11,12 @@
     content: "";
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -42px;
     height: 7px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: 320px 7px;
-    // background-position-x: -8px;
+    background-position-x: -8px;
 
     @media (min-width: $width-tablet) {
       height: 17px;
@@ -58,6 +59,7 @@
   @include text(25px, 30px);
   font-weight: 700;
   color: $black;
+  margin-bottom: 6px;
 
   @media (min-width: $width-tablet) {
     @include text(43px, 50px);
@@ -74,6 +76,8 @@
   font-weight: 700;
   color: $seafoam;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 22px;
 
   @media (min-width: $width-tablet) {
     @include text(17px, 17px);
@@ -85,6 +89,7 @@
 .week-product__text {
   @include text(15px, 24px);
   color: $text;
+  margin-top: 0;
 
   @media (min-width: $width-tablet) {
     @include text(17px, 30px);
@@ -97,6 +102,7 @@
   color: $text;
   border-collapse: collapse;
   width: 100%;
+  margin-bottom: 28px;
 }
 
 .week-product__characteristics-title {
@@ -106,12 +112,13 @@
 
 .week-product__characteristics-value {
   border-bottom: 1px solid $border-gray;
-  padding: 10px 10px 10px 0;
+  // padding: 10px 10px 10px 0;
 }
 
 .week-product__image {
   display: block;
   margin: 0 auto;
+  margin-bottom: 25px;
 
   @media (min-width: $width-tablet) {
     width: 333px;
@@ -143,6 +150,7 @@
   color: $black;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 25px;
 
   @media (min-width: $width-tablet) {
     @include text(20px, 24px);

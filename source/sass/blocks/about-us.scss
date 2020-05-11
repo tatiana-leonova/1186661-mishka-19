@@ -1,4 +1,8 @@
 .about-us__wrapper {
+  margin-top: 69px;
+  margin-bottom: 55px;
+
+
   @media (min-width: $width-desktop) {
     margin-left: 150px;
     margin-bottom: 50px;
@@ -19,6 +23,7 @@
   @include text(25px, 30px);
   font-weight: 700;
   color: $black;
+  margin-bottom: 31px;
 
   @media (min-width: $width-tablet) {
     @include text(43px, 50px);
@@ -30,12 +35,40 @@
 }
 
 .about-us__item {
+  position: relative;
+
   @include text(17px, 20px);
   font-weight: 700;
   color: $black;
+  margin-bottom: 28px;
+  padding: 55px 10px 0 0;
 
   @media (min-width: $width-tablet) {
     @include text(20px, 22px);
     width: 44%;
   }
+}
+
+.about-us__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-us__icon--flower {
+  left: 8px;
+}
+
+.about-us__icon--heart {
+  top: 5px;
+  left: 7px;
+}
+
+.about-us__icon--rocket {
+  top: 5px;
+  left: -4px;
+}
+
+.about-us__item-text {
+  margin: 0;
 }
