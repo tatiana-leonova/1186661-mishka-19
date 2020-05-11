@@ -1,9 +1,11 @@
 .social__list {
   @include no-list;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid $border-gray;
+  padding-bottom: 19px;
 }
 
 .social__item {
