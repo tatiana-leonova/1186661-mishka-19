@@ -2,6 +2,11 @@
   background-color: $bc-grey;
   padding-top: 20px;
   padding-bottom: 15px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 45px;
+    padding-bottom: 42px;
+  }
 }
 
 .page-footer__wrapper {
@@ -15,5 +20,9 @@
 .page-footer__logo-link {
   @media (max-width: $width-mobile-only) {
     display: none;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin-right: 83px;
   }
 }

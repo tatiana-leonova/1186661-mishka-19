@@ -6,6 +6,12 @@
   align-items: center;
   border-bottom: 1px solid $border-gray;
   padding-bottom: 19px;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 0;
+    border-bottom: none;
+    width: 300px;
+  }
 }
 
 .social__item {
@@ -18,5 +24,9 @@
 
   svg {
     vertical-align: middle;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin: 6px 12px 0 7px;
   }
 }
