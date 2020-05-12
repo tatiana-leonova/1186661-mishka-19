@@ -8,10 +8,13 @@
   }
 
   @media (min-width: $width-desktop) {
-    min-height: 457px;
+    // min-height: 457px;
     max-width: $width-desktop;
     margin: 0 auto;
     // margin-left: 150px;
+    margin-top: 125px;
+    padding-top: 69px;
+    margin-bottom: 104px;
   }
 }
 
@@ -23,7 +26,8 @@
   }
 
   @media (min-width: $width-desktop) {
-    margin-left: 150px;
+    // padding-left: 223px;
+    padding-right: 590px;
   }
 }
 
@@ -58,8 +62,19 @@
 
   @media (min-width: $width-desktop) {
     @include text(53px, 57px);
+    padding-left: 170px;
+
+    &::after {
+      left: -110px;
+      top: -9px;
+    }
   }
 }
+
+//   @media (min-width: $width-desktop) {
+//     @include text(53px, 57px);
+//   }
+// }
 
 .contacts__inner {
   @media (min-width: $width-tablet) {
@@ -68,7 +83,9 @@
 
   @media (min-width: $width-desktop) {
     flex-direction: column;
-    width: 700px;
+    width: 780px;
+    padding-left: 174px;
+    margin-bottom: 50px;
   }
 }
 
@@ -176,7 +193,7 @@
 
 .contacts__button-wrapper {
   @media (min-width: $width-desktop) {
-    margin-left: 150px;
+    padding-left: 225px;
   }
 }
 

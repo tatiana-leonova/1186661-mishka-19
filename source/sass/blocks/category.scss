@@ -16,6 +16,13 @@
       background-size: 768px 24px;
       // background-position-x: -20px;
     }
+
+    @media (min-width: $width-desktop) {
+      bottom: -12px;
+      height: 34px;
+      background-size: auto 37px;
+      background-position-x: 12px;
+    }
   }
 }
 
@@ -26,14 +33,15 @@
   min-height: 283px;
 
   @media (min-width: $width-tablet) {
-    min-height: 570px;
+    min-height: 555px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: center 41%;
+    background-position: center 38%;
   }
 
   @media (min-width: $width-desktop) {
-    min-height: 700px;
+    min-height: 568px;
     background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: center 34%;
   }
 }
 
@@ -53,6 +61,7 @@
 
   @media (min-width: $width-desktop) {
     @include text(53px, 57px);
+    padding-top: 95px;
   }
 }
 
@@ -62,7 +71,7 @@
   @media (min-width: $width-tablet) {
     display: flex;
     justify-content: center;
-    margin-top: -14px;
+    // margin-top: -14px;
   }
 }
 

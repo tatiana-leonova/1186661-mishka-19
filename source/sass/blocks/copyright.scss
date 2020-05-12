@@ -16,6 +16,10 @@
   color: $black;
   margin-right: 22px;
   width: 128px;
+
+  @media (min-width: $width-desktop) {
+    margin-right: 16px;
+  }
 }
 
 .copyright__link-icon {
