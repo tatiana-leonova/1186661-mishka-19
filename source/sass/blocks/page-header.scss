@@ -2,6 +2,10 @@
   @media (min-width: $width-tablet) {
     background-image: linear-gradient(to bottom, $white 90px, $border-gray 90px, $border-gray 91px, $bc-grey 91px);
   }
+
+  @media (min-width: $width-desktop) {
+    background-image: linear-gradient(to bottom, $white 101px, $border-gray 101px, $border-gray 102px, $bc-grey 102px);
+  }
 }
 
 .page-header--index {

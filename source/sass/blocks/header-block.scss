@@ -9,6 +9,11 @@
     margin-bottom: 70px;
   }
 
+  @media (min-width: $width-desktop) {
+    padding: 34px 30px 84px 30px;
+    margin-bottom: 112px;
+  }
+
   &::after {
     @media (min-width: $width-tablet) {
       position: absolute;
@@ -21,6 +26,11 @@
       height: 17px;
       background-size: 768px 24px;
       // background-position-x: -20px;
+    }
+
+    @media (min-width: $width-desktop) {
+      height: 34px;
+      background-size: 1150px 34px;
     }
   }
 }
