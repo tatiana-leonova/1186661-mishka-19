@@ -2,10 +2,14 @@
   margin-top: 26px;
   margin-bottom: 55px;
 
+  @media (min-width: $width-tablet) {
+    margin-bottom: 22px;
+  }
+
 
   @media (min-width: $width-desktop) {
     padding-left: 175px;
-    margin-bottom: 63px;
+    margin-bottom: 31px;
   }
 }
 
@@ -55,7 +59,8 @@
   @media (min-width: $width-tablet) {
     @include text(20px, 22px);
     width: 50%;
-    margin-bottom: 45px;
+    padding: 52px 10px 0 0;
+    margin-bottom: 59px;
   }
 
   @media (min-width: $width-desktop) {
@@ -63,39 +68,39 @@
   }
 }
 
-.about-us__item--flower {
+// .about-us__item--flower {
+//   @media (min-width: $width-tablet) {
+//     order: 1;
+//   }
+// }
+
+.about-us__item--ball {
   @media (min-width: $width-tablet) {
     order: 1;
   }
 }
 
-.about-us__item--ball {
+.about-us__item--money {
   @media (min-width: $width-tablet) {
     order: 2;
   }
 }
 
-.about-us__item--money {
+.about-us__item--rocket {
   @media (min-width: $width-tablet) {
     order: 3;
   }
 }
 
-.about-us__item--rocket {
+.about-us__item--heart {
   @media (min-width: $width-tablet) {
     order: 4;
   }
+}
 
-  .about-us__item--heart {
-    @media (min-width: $width-tablet) {
-      order: 5;
-    }
-  }
-
-  .about-us__item--gift {
-    @media (min-width: $width-tablet) {
-      order: 6;
-    }
+.about-us__item--gift {
+  @media (min-width: $width-tablet) {
+    order: 5;
   }
 }
 

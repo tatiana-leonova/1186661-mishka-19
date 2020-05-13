@@ -11,7 +11,8 @@
 
   @media (min-width: $width-desktop) {
     // min-height: 567px;
-    margin-left: 50px;
+    // margin-left: 50px;
+    background-position-x: 50px;
   }
 
   &::after {
@@ -33,7 +34,7 @@
     }
 
     @media (min-width: $width-desktop) {
-      left: 0;
+      left: 50px;
       right: 50px;
       height: 23px;
       background-size: 1050px 21px;
@@ -53,7 +54,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding-left: 125px;
+    padding-left: 174px;
     padding-top: 74px;
   }
 }

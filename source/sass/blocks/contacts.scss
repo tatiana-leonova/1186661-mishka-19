@@ -65,7 +65,7 @@
     padding-left: 170px;
 
     &::after {
-      left: -110px;
+      left: 64px;
       top: -9px;
     }
   }
@@ -161,7 +161,8 @@
     background-size: 100%;
 
     @media (min-width: $width-tablet) {
-      top: 137px;
+      top: 145px;
+      left: calc(50% - 25px);
     }
   }
 
