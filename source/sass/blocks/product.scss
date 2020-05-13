@@ -1,5 +1,5 @@
 .product {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   border: 1px solid $border-gray;
 
   @media (min-width: $width-tablet) and (max-width: $width-tablet-only) {
@@ -28,7 +28,7 @@
 }
 
 .product__wrapper-description {
-  padding: 0 25px;
+  padding: 0 25px 0 28px;
 
   @media (min-width: $width-tablet) and (max-width: $width-tablet-only) {
     display: flex;
@@ -44,6 +44,10 @@
   }
 }
 
+.product__inner-description {
+  margin-bottom: 20px;
+}
+
 .product__title-link {
   text-decoration: none;
 }
@@ -52,6 +56,8 @@
   @include text(17px, 24px);
   font-weight: 700;
   color: $black;
+  margin: 0;
+  margin-top: 26px;
 
   @media (min-width: $width-tablet) {
     @include text(20px, 24px);
@@ -61,6 +67,7 @@
 .product__characteristics {
   @include text(13px, 30px);
   color: $text;
+  margin-top: 5px;
 
   @media (min-width: $width-tablet) {
     @include text(15px, 30px);
@@ -73,7 +80,7 @@
   justify-content: space-between;
   border-top: 1px solid $bc-grey;
   align-items: center;
-  padding: 22px 4px 15px;
+  padding: 21px 0 27px;
 
   @media (min-width: $width-tablet) {
     padding: 22px 4px 15px;

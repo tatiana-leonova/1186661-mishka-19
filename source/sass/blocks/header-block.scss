@@ -1,7 +1,8 @@
 .header-block__wrapper {
   position: relative;
   background-color: $bc-grey;
-  padding: 30px;
+  padding: 53px 30px 58px 30px;
+  margin-bottom: 30px;
 
   &::after {
     @media (min-width: $width-tablet) {
