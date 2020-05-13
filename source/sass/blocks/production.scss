@@ -2,6 +2,11 @@
   position: relative;
   padding-top: 9px;
   margin-bottom: 58px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 0;
+    margin-bottom: 63px;
+  }
 }
 
 .production__wrapper {
@@ -11,6 +16,7 @@
   @media (min-width: $width-tablet) {
     display: flex;
     flex-direction: column;
+    padding-bottom: 45px;
   }
 
   @media (min-width: $width-desktop) {
@@ -31,6 +37,9 @@
   @media (min-width: $width-tablet) {
     @include text(20px, 24px);
     order: 2;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    padding: 0 30px 0 107px;
   }
 
   @media (min-width: $width-desktop) {
@@ -45,6 +54,11 @@
     height: 28px;
     top: 6px;
     left: 33px;
+
+    @media (min-width: $width-tablet) {
+      top: -6px;
+      left: 40px;
+    }
   }
 }
 
@@ -90,6 +104,7 @@
 
   @media (min-width: $width-tablet) {
     order: 3;
+    padding: 0 40px;
   }
 }
 
@@ -101,6 +116,8 @@
   @media (min-width: $width-tablet) {
     @include text(15px, 30px);
     // order: 3;
+    margin-top: 0;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $width-desktop) {

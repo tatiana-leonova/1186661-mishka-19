@@ -5,6 +5,7 @@
   @media (min-width: $width-tablet) and (max-width: $width-tablet-only) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $width-desktop) {
@@ -72,6 +73,7 @@
   @media (min-width: $width-tablet) {
     @include text(15px, 30px);
     flex-grow: 1;
+    margin-top: 7px;
   }
 }
 
@@ -83,8 +85,8 @@
   padding: 21px 0 27px;
 
   @media (min-width: $width-tablet) {
-    padding: 22px 4px 15px;
     margin-top: auto;
+    padding: 23px 4px 26px 4px;
   }
 
   @media (min-width: $width-desktop) {

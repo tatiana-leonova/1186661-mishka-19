@@ -4,6 +4,11 @@
   padding: 53px 30px 58px 30px;
   margin-bottom: 30px;
 
+  @media (min-width: $width-tablet) {
+    padding: 24px 30px 58px 30px;
+    margin-bottom: 70px;
+  }
+
   &::after {
     @media (min-width: $width-tablet) {
       position: absolute;
@@ -28,6 +33,7 @@
 
   @media (min-width: $width-tablet) {
     @include text(43px, 50px);
+    margin-top: 0;
   }
 
   @media (min-width: $width-desktop) {
