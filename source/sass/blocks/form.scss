@@ -1,3 +1,7 @@
+.form {
+  margin-bottom: 55px;
+}
+
 .form__wrapper {
   @media (min-width: $width-tablet) {
     display: flex;
@@ -22,6 +26,20 @@
   font-weight: 700;
   color: $seafoam;
   text-transform: uppercase;
+  margin-bottom: 0;
+
+  @media (max-width: $width-mobile-only) {
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      margin-left: 25px;
+      flex-grow: 1;
+      height: 1px;
+      background-color: $seafoam;
+    }
+  }
 
   @media (min-width: $width-tablet) {
     // align-items: flex-start;
@@ -31,6 +49,8 @@
 }
 
 .form__inner--color {
+  margin-bottom: 37px;
+
   @media (min-width: $width-tablet) {
     display: flex;
     justify-content: space-between;
@@ -40,6 +60,8 @@
 }
 
 .form__row--color {
+  margin-bottom: 19px;
+
   @media (min-width: $width-tablet) {
     min-width: 240px;
   }
@@ -55,20 +77,127 @@
   }
 }
 
-.form__inner {
+.form__inner--radio {
+  margin-bottom: 37px;
+}
+
+.form__input--radio {
+  appearance: none;
+  opacity: 0;
+}
+
+.form__label--radio {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-top: 4px;
+  padding-left: 63px;
+  // padding-bottom: 10px;
+  margin-bottom: -10px;
+  // padding-top: 12px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -6px;
+    left: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $text;
+  }
+
+  &::after {
+    position: absolute;
+    display: none;
+    content: "";
+    top: 6px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $seafoam-two;
+  }
+}
+
+.form__input--radio:checked ~ .form__label--radio::after {
+  display: block;
+}
+
+.form__input--radio:disabled ~ .form__label--radio {
+  opacity: 0.3;
+}
+
+.form__input--checkbox {
+  appearance: none;
+  opacity: 0;
+}
+
+.form__label--checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-top: 4px;
+  padding-left: 63px;
+  // padding-bottom: 10px;
+  margin-bottom: -10px;
+  // padding-top: 12px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -6px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $text;
+  }
+
+  &::after {
+    position: absolute;
+    display: none;
+    content: "";
+    top: 6px;
+    left: 9px;
+    width: 23px;
+    height: 11px;
+    border: 2px solid $seafoam-two;
+    transform: rotate(-45deg);
+    border-top-style: none;
+    border-right-style: none;
+  }
+}
+
+.form__input--checkbox:checked ~ .form__label--checkbox::after {
+  display: block;
+}
+
+.form__input--checkbox:disabled ~ .form__label--checkbox {
+  opacity: 0.3;
+}
+
+.form__inner--name {
+  padding-top: 11px;
+  padding-bottom: 33px;
+
   @media (min-width: $width-tablet) {
     width: 75%;
   }
 }
 
 .form__row--name {
-  display: flex;
+  padding-top: 20px;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+  }
 }
 
 .form__input--name {
-  flex-grow: 1;
   border: 0;
   border-bottom: 2px solid $black;
+  width: 100%;
+  height: 52px;
 }
 
 .form__label--name {
@@ -76,8 +205,35 @@
   margin-right: 20px;
 }
 
+.form__inner--contacts {
+  padding-bottom: 15px;
+}
+
 .form__row--contacts {
-  display: flex;
+  @media (min-width: $width-tablet) {
+    display: flex;
+  }
+}
+
+.form__row--tel {
+  position: relative;
+  padding-bottom: 32px;
+}
+
+.form__icon--tel {
+  position: absolute;
+  top: 34px;
+  right: 7px;
+}
+
+.form__row--mail {
+  position: relative;
+}
+
+.form__icon--mail {
+  position: absolute;
+  top: 34px;
+  right: 4px;
 }
 
 .form__label--contacts {
@@ -86,6 +242,20 @@
   font-weight: 700;
   text-transform: uppercase;
   display: block;
+  padding-bottom: 7px;
+
+  @media (max-width: $width-mobile-only) {
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      margin-left: 25px;
+      flex-grow: 1;
+      height: 1px;
+      background-color: $seafoam;
+    }
+  }
 
   @media (min-width: $width-tablet) {
     width: 25%;
@@ -93,10 +263,12 @@
 }
 
 .form__input--contacts {
-  flex-grow: 1;
   border: 0;
   border-bottom: 2px solid $black;
   background-color: inherit;
+  width: 100%;
+  height: 52px;
+  padding-right: 40px;
 }
 
 .form__input::placeholder {
@@ -111,6 +283,8 @@
 .form__required-fields {
   @include text(14px, 16px);
   color: $text;
+  margin-top: 7px;
+  margin-bottom: 31px;
 
   @media (min-width: $width-tablet) {
     @include text(17px, 30px);
@@ -118,9 +292,15 @@
   }
 }
 
+.form__legend--textarea {
+  padding-bottom: 25px;
+}
+
 .form__input--textarea {
   width: 100%;
   border: 2px solid $black;
+  min-height: 142px;
+  padding: 15px;
 }
 
 .form__wrapper-button {

@@ -35,6 +35,10 @@
   }
 }
 
+.header-block__wrapper--form {
+  margin-bottom: 21px;
+}
+
 .header-block__title {
   @include text(27px, 30px);
   font-weight: 700;
