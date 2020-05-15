@@ -1,11 +1,21 @@
 .form {
   margin-bottom: 55px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 50px;
+  }
 }
 
 .form__wrapper {
   @media (min-width: $width-tablet) {
     display: flex;
     // flex-wrap: wrap;
+  }
+}
+
+.form__wrapper--radio {
+  @media (min-width: $width-tablet) {
+    margin-bottom: 32px;
   }
 }
 
@@ -18,6 +28,34 @@
 .form__fieldset--grey {
   @media (min-width: $width-tablet) {
     background-color: $border-gray;
+  }
+}
+
+.form__fieldset--color {
+  @media (min-width: $width-tablet) {
+    padding-top: 48px;
+    padding-bottom: 28px;
+  }
+}
+
+.form__fieldset--name {
+  @media (min-width: $width-tablet) {
+    padding-top: 38px;
+    padding-bottom: 21px;
+  }
+}
+
+.form__fieldset--contacts {
+  @media (min-width: $width-tablet) {
+    padding-top: 50px;
+    padding-bottom: 34px;
+  }
+}
+
+.form__fieldset--textarea {
+  @media (min-width: $width-tablet) {
+    padding-top: 50px;
+    padding-bottom: 53px;
   }
 }
 
@@ -50,16 +88,28 @@
 
 .form__legend--radio {
   margin-bottom: 22px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 25px;
+  }
 }
 
 .form__legend--color {
   margin-top: 12px;
   margin-bottom: 22px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 20px;
+  }
 }
 
 .form__legend--name {
   margin-top: 12px;
   margin-bottom: 20px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 30px;
+  }
 }
 
 .form__inner--color {
@@ -76,6 +126,13 @@
 
   @media (min-width: $width-tablet) {
     min-width: 240px;
+    margin-bottom: 22px;
+  }
+}
+
+.form__inner--textarea {
+  @media (min-width: $width-tablet) {
+    display: flex;
   }
 }
 
@@ -100,6 +157,10 @@
 
 .form__row--radio {
   min-height: 61px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 15px;
+  }
 }
 
 .form__label--radio {
@@ -108,6 +169,10 @@
   cursor: pointer;
   padding: 12px 0 12px 63px;
   // margin-bottom: -10px;
+
+  @media (min-width: $width-tablet) {
+    padding: 22px 0 22px 81px;
+  }
 
   &::before {
     position: absolute;
@@ -120,6 +185,7 @@
     border: 2px solid $text;
 
     @media (min-width: $width-tablet) {
+      top: 7px;
       width: 52px;
       height: 53px;
     }
@@ -137,7 +203,7 @@
     background-color: $seafoam-two;
 
     @media (min-width: $width-tablet) {
-      top: 10px;
+      top: 23px;
       left: 15px;
       width: 22px;
       height: 22px;
@@ -165,9 +231,9 @@
   padding: 14px 0 10px 63px;
   // margin-bottom: -10px;
 
-  // @media (min-width: $width-tablet) {
-  //   margin-bottom: 0;
-  // }
+  @media (min-width: $width-tablet) {
+    padding: 18px 0 18px 81px;
+  }
 
   &::before {
     position: absolute;
@@ -228,6 +294,8 @@
 
   @media (min-width: $width-tablet) {
     display: flex;
+    align-items: center;
+    margin-bottom: 24px;
   }
 }
 
@@ -236,11 +304,16 @@
   border-bottom: 2px solid $black;
   width: 100%;
   height: 52px;
+  padding: 0 17px;
 }
 
 .form__label--name {
   display: block;
   margin-right: 20px;
+
+  @media (min-width: $width-tablet) {
+    margin-right: 25px;
+  }
 }
 
 .form__inner--contacts {
@@ -250,18 +323,28 @@
 .form__row--contacts {
   @media (min-width: $width-tablet) {
     display: flex;
+    align-items: center;
   }
 }
 
 .form__row--tel {
   position: relative;
   padding-bottom: 32px;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 23px;
+  }
 }
 
 .form__icon--tel {
   position: absolute;
   top: 34px;
   right: 7px;
+
+  @media (min-width: $width-tablet) {
+    top: 8px;
+    right: 26px;
+  }
 }
 
 .form__row--mail {
@@ -272,6 +355,11 @@
   position: absolute;
   top: 34px;
   right: 4px;
+
+  @media (min-width: $width-tablet) {
+    top: 10px;
+    right: 21px;
+  }
 }
 
 .form__label--contacts {
@@ -296,7 +384,7 @@
   }
 
   @media (min-width: $width-tablet) {
-    width: 25%;
+    width: 34%;
   }
 }
 
@@ -307,6 +395,11 @@
   width: 100%;
   height: 52px;
   padding-right: 40px;
+
+  @media (min-width: $width-tablet) {
+    @include text(19px, 18px);
+    padding: 0 60px 0 19px;
+  }
 }
 
 .form__input::placeholder {
@@ -327,11 +420,17 @@
   @media (min-width: $width-tablet) {
     @include text(17px, 30px);
     order: 2;
+    margin: 0;
   }
 }
 
 .form__legend--textarea {
   padding-bottom: 25px;
+
+  @media (min-width: $width-tablet) {
+    width: 34%;
+    margin-top: 18px;
+  }
 }
 
 .form__input--textarea {
