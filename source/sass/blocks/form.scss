@@ -48,9 +48,21 @@
   }
 }
 
-.form__inner--color {
-  margin-bottom: 37px;
+.form__legend--radio {
+  margin-bottom: 22px;
+}
 
+.form__legend--color {
+  margin-top: 12px;
+  margin-bottom: 22px;
+}
+
+.form__legend--name {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.form__inner--color {
   @media (min-width: $width-tablet) {
     display: flex;
     justify-content: space-between;
@@ -77,27 +89,30 @@
   }
 }
 
-.form__inner--radio {
-  margin-bottom: 37px;
-}
+// .form__inner--radio {
+//   margin-bottom: 0;
+// }
 
-.form__input--radio {
-  appearance: none;
-  opacity: 0;
+// .form__input--radio {
+//   appearance: none;
+//   opacity: 0;
+// }
+
+.form__row--radio {
+  min-height: 61px;
 }
 
 .form__label--radio {
   display: block;
   position: relative;
   cursor: pointer;
-  padding-top: 4px;
-  padding-left: 63px;
-  margin-bottom: -10px;
+  padding: 12px 0 12px 63px;
+  // margin-bottom: -10px;
 
   &::before {
     position: absolute;
     content: "";
-    top: -6px;
+    top: 3px;
     left: 0;
     border-radius: 50%;
     width: 40px;
@@ -114,7 +129,7 @@
     position: absolute;
     display: none;
     content: "";
-    top: 6px;
+    top: 15px;
     left: 12px;
     width: 16px;
     height: 16px;
@@ -138,27 +153,26 @@
   opacity: 0.3;
 }
 
-.form__input--checkbox {
-  appearance: none;
-  opacity: 0;
-}
+// .form__input--checkbox {
+//   appearance: none;
+//   opacity: 0;
+// }
 
 .form__label--checkbox {
   display: block;
   position: relative;
   cursor: pointer;
-  padding-top: 4px;
-  padding-left: 63px;
-  margin-bottom: -10px;
+  padding: 14px 0 10px 63px;
+  // margin-bottom: -10px;
 
-  @media (min-width: $width-tablet) {
-    margin-bottom: 0;
-  }
+  // @media (min-width: $width-tablet) {
+  //   margin-bottom: 0;
+  // }
 
   &::before {
     position: absolute;
     content: "";
-    top: -6px;
+    top: 2px;
     left: 0;
     width: 40px;
     height: 40px;
@@ -174,7 +188,7 @@
     position: absolute;
     display: none;
     content: "";
-    top: 6px;
+    top: 14px;
     left: 9px;
     width: 23px;
     height: 11px;
@@ -201,7 +215,7 @@
 
 .form__inner--name {
   padding-top: 11px;
-  padding-bottom: 33px;
+  padding-bottom: 8px;
 
   @media (min-width: $width-tablet) {
     width: 75%;
@@ -209,7 +223,8 @@
 }
 
 .form__row--name {
-  padding-top: 20px;
+  // padding-top: 20px;
+  margin-bottom: 22px;
 
   @media (min-width: $width-tablet) {
     display: flex;
