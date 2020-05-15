@@ -6,5 +6,10 @@
   @media (min-width: $width-tablet) {
     @include text(17px, 30px);
     margin-bottom: 49px;
+
+    @media (min-width: $width-desktop) {
+      padding-left: 175px;
+      padding-right: 150px;
+    }
   }
 }

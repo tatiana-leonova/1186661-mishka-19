@@ -40,6 +40,10 @@
   @media (min-width: $width-tablet) {
     margin-bottom: 65px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 106px;
+  }
 }
 
 .header-block__title {
