@@ -33,15 +33,15 @@
   min-height: 283px;
 
   @media (min-width: $width-tablet) {
-    min-height: 555px;
+    min-height: 539px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-position: center 38%;
+    background-position: center 42%;
   }
 
   @media (min-width: $width-desktop) {
-    min-height: 568px;
+    min-height: 551px;
     background-image: url("../img/hero-desktop@1x.jpg");
-    background-position: center 34%;
+    background-position: center 40%;
   }
 }
 
@@ -56,12 +56,13 @@
 
   @media (min-width: $width-tablet) {
     @include text(43px, 50px);
-    padding-top: 83px;
+    padding-top: 66px;
   }
 
   @media (min-width: $width-desktop) {
     @include text(53px, 57px);
-    padding-top: 95px;
+    // padding-top: 95px;
+    padding-top: 78px;
   }
 }
 
