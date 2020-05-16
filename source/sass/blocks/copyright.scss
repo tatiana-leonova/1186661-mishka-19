@@ -3,10 +3,26 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding-top: 9px;
+  padding-top: 21px;
+  transition: 0.3s;
 
   @media (min-width: $width-tablet) {
     padding-top: 0;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $grenny-hvr;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    svg {
+      fill: $grenny-hvr;
+    }
   }
 }
 
@@ -14,14 +30,15 @@
   @include text(19px, 18px);
   font-weight: 700;
   color: $black;
-  margin-right: 22px;
+  margin-right: 27px;
   width: 128px;
 
   @media (min-width: $width-desktop) {
-    margin-right: 16px;
+    margin-right: 26px;
   }
 }
 
 .copyright__link-icon {
   display: block;
+  fill: $seafoam;
 }

@@ -1,7 +1,7 @@
 .page-footer {
   background-color: $bc-grey;
   padding-top: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 23px;
 
   @media (min-width: $width-tablet) {
     padding-top: 45px;
@@ -18,11 +18,23 @@
 }
 
 .page-footer__logo-link {
+  transition: 0.3s;
+
   @media (max-width: $width-mobile-only) {
     display: none;
   }
 
   @media (min-width: $width-tablet) {
     margin-right: 83px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $seafoam-two;
+  }
+
+  &:active {
+    fill: $seafoam-two;
+    opacity: 0.3;
   }
 }

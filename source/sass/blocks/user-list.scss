@@ -15,11 +15,26 @@
   color: $black;
   text-decoration: none;
   position: relative;
+  transition: 0.3s;
 
   @media (max-width: $width-mobile-only) {
     // display: block;
     padding: 27px 30px 27px 74px;
     border-bottom: 1px solid $border-gray;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+
+    svg {
+      fill: $seafoam-two;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

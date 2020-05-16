@@ -51,6 +51,7 @@
 
 .main-nav__logo-img {
   display: block;
+  transition: 0.3s;
 
   @media (max-width: $width-mobile-only) {
     margin: 0 auto;
@@ -66,6 +67,15 @@
     width: 149px;
     height: 72px;
     margin-left: 0;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

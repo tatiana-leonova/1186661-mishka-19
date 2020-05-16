@@ -16,6 +16,7 @@
 .production__wrapper {
   border: 1px solid $border-gray;
   padding-bottom: 32px;
+  transition: 0.3s;
 
   @media (min-width: $width-tablet) {
     display: flex;
@@ -26,6 +27,15 @@
   @media (min-width: $width-desktop) {
     min-height: 455px;
     align-items: flex-end;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -55,6 +65,7 @@
     position: absolute;
     content: "";
     background-image: url("../img/icon-video.svg");
+    // background-color: $seafoam;
     width: 32px;
     height: 28px;
     top: 6px;
@@ -108,6 +119,17 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
 }
 
 .production__wrapper-text-button {
@@ -143,6 +165,10 @@
 }
 
 .production__button {
+  @media (min-width: $width-tablet) and (max-width: $width-tablet-only) {
+    margin: 0 auto;
+  }
+
   @media (min-width: $width-tablet) {
     // order: 4;
     margin: none;
