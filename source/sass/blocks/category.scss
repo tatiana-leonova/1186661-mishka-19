@@ -128,7 +128,9 @@
   }
 
   &:active {
-    color: 0.3;
+    .category__item-title {
+      opacity: 0.3;
+    }
 
     svg {
       opacity: 0.3;
@@ -157,7 +159,9 @@
   }
 
   &:active {
-    color: 0.3;
+    .category__item-title {
+      opacity: 0.3;
+    }
 
     svg {
       opacity: 0.3;

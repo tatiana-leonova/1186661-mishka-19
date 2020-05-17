@@ -178,6 +178,22 @@
   }
 }
 
+.contacts__map-iframe {
+  display: block;
+  border: none;
+  position: absolute;
+  width: 100%;
+
+  @media (min-width: $width-tablet) {
+    height: 457px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 525px;
+    height: 457px;
+  }
+}
+
 .contacts__map-image {
   display: block;
   margin: 0 auto;
