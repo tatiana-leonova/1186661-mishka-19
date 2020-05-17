@@ -572,15 +572,16 @@
   }
 }
 
-.form__input::placeholder {
-  @include text(17px, 18px);
-  font-family: $font;
-  font-weight: 500;
-  opacity: 0.3;
-  text-transform: uppercase;
+.form__input {
+  &::placeholder {
+    @include text(17px, 18px);
+    font-family: $font;
+    font-weight: 400;
+    opacity: 0.3;
 
-  @media (min-width: $width-tablet) {
-    @include text(19px, 18px);
+    @media (min-width: $width-tablet) {
+      @include text(19px, 18px);
+    }
   }
 }
 
