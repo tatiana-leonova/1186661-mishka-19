@@ -125,7 +125,7 @@
       </div>
       <ul class="category__list">
         <li class="category__item category__item--interior">
-          <a class="category__item-link" href="#">
+          <a class="category__item-link category__item-link--interior" href="#">
             <p class="category__item-title">Предметы интерьера</p>
             <svg class="category__item-icon" width="40" height="62">
               <use xlink:href="#icon-interior"></use>
@@ -133,7 +133,7 @@
           </a>
         </li>
         <li class="category__item category__item--toy">
-          <a class="category__item-link" href="#">
+          <a class="category__item-link category__item-link--toy" href="#">
             <p class="category__item-title">Детские игрушки</p>
             <svg class="category__item-icon" width="60" height="60">
               <use xlink:href="#icon-toy"></use>
@@ -182,7 +182,7 @@
       </div>
       <div class="week-product__buy">
         <p class="week-product__price">Цена: 990&nbsp;руб.</p>
-        <a class="week-product__button button" href="#">Заказать</a>
+        <a class="week-product__button button" href="order.html">Заказать</a>
       </div>
     </section>
 
@@ -353,18 +353,21 @@
       <fieldset class="modal-form__fieldset">
         <h2 class="modal-form__title">Добавить в&nbsp;корзину</h2>
         <p class="modal-form__text">Выберите размер:</p>
-        <input class="modal-form__input" type="radio" name="size" id="size-s">
+        <div class="modal-form__input-wrapper">
+        <input class="modal-form__input visually-hidden" type="radio" name="size" id="size-s" value="s" checked>
         <label class="modal-form__label" for="size-s">S</label>
-        <input class="modal-form__input" type="radio" name="size" id="size-m">
-        <label class="modal-form__label" for="size-s">M</label>
-        <input class="modal-form__input" type="radio" name="size" id="size-l">
-        <label class="modal-form__label" for="size-s">L</label>
+        <input class="modal-form__input visually-hidden" type="radio" name="size" id="size-m" value="m">
+        <label class="modal-form__label" for="size-m">M</label>
+        <input class="modal-form__input visually-hidden" type="radio" name="size" id="size-l" value="l">
+        <label class="modal-form__label" for="size-l">L</label>
+      </div>
       </fieldset>
       <button class="modal-form__button button" type="submit">Добавить</button>
     </form>
   </div>
 
   <!-- <script src="js/nav.js"></script> -->
+  <script src="js/modal-form.js"></script>
 
 </body>
 

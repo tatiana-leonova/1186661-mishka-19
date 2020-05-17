@@ -415,9 +415,13 @@
   border-bottom: 2px solid $black;
   width: 100%;
   height: 52px;
-  padding: 0 17px;
+  padding: 12px 17px 12px 0;
   outline: none;
   transition: 0.3s;
+
+  @media (min-width: $width-tablet) {
+    padding: 12px 17px;
+  }
 
   &:hover,
   &:focus {
@@ -540,18 +544,20 @@
   background-color: inherit;
   width: 100%;
   height: 52px;
-  padding-right: 40px;
+  padding: 12px 40px 12px 0;
+  // padding-right: 12px 12px 12px 40px;
   outline: none;
   transition: 0.3s;
 
   @media (min-width: $width-tablet) {
     @include text(19px, 18px);
-    padding: 0 60px 0 19px;
+    padding: 12px 60px 12px 19px;
+    background-color: $border-gray;
   }
 
   @media (min-width: $width-desktop) {
     @include text(19px, 18px);
-    padding: 0 42px 0 19px;
+    padding: 12px 42px 12px 19px;
   }
 
   &:hover,
@@ -568,7 +574,10 @@
 
 .form__input::placeholder {
   @include text(17px, 18px);
-  color: $placeholder;
+  font-family: $font;
+  font-weight: 500;
+  opacity: 0.3;
+  text-transform: uppercase;
 
   @media (min-width: $width-tablet) {
     @include text(19px, 18px);

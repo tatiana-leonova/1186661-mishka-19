@@ -1,12 +1,30 @@
 .cart-modal {
-  background-color: $white;
-  width: 320px;
-  min-height: 336px;
-  margin: 0 auto;
-  padding: 20px 30px;
-  border: 1px solid $border-gray;
+  // background-color: $white;
+  // width: 320px;
+  // // min-height: 336px;
+  // margin: 0 auto;
+  // padding: 20px 30px;
+  // border: 1px solid $border-gray;
+  // box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 
-  @media (min-width: $width-tablet) {
-    width: 556px;
-  }
+  // @media (min-width: $width-tablet) {
+  //   width: 568px;
+  //   min-height: 336px;
+  // }
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.cart-modal--opened {
+  display: block;
+}
+
+.cart-modal__form {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

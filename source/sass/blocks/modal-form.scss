@@ -1,34 +1,69 @@
 .modal-form {
   text-align: center;
+  background-color: $white;
+  width: 320px;
+  // min-height: 336px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  border: 1px solid $border-gray;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $width-tablet) {
+    width: 568px;
+    min-height: 336px;
+  }
 }
+
 
 .modal-form__fieldset {
   border: none;
-  padding: 0;
+  // padding: 0;
+  padding: 0 0 23px 0;
   margin: 0;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 9px;
+    // padding: 22px 75px;
+    padding: 13px 75px 22px 75px;
+  }
 }
 
 .modal-form__title {
   @include text(25px, 30px);
   font-weight: 700;
   color: $black;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-transform: uppercase;
 
   @media (min-width: $width-tablet) {
     @include text(30px, 57px);
-  }
-
-  @media (min-width: $width-desktop) {
-    @include text(53px, 57px);
+    margin-top: 0;
+    margin-bottom: 15px;
   }
 }
 
 .modal-form__text {
   @include text(15px, 30px);
   color: $text;
+  margin-top: 0;
+  margin-bottom: 25px;
 
   @media (min-width: $width-tablet) {
-    @include text(27px, 30px);
+    @include text(17px, 30px);
+    margin-bottom: 20px;
+  }
+}
+
+.modal-form__input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 8px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
   }
 }
 
@@ -36,6 +71,29 @@
   @include text(17px, 16px);
   color: $text;
   font-weight: 700;
+  width: 82px;
+  height: 52px;
+  padding: 16px 10px 15px;
+  border: 2px solid $border-gray;
+  cursor: pointer;
+
+  @media (min-width: $width-tablet) {
+    width: 112px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border: 2px solid $text;
+    opacity: 1;
+  }
+}
+
+.modal-form__input:checked + .modal-form__label {
+  border: 2px solid $seafoam;
 }
 
 .modal-form__button {
@@ -44,4 +102,11 @@
   font-weight: 700;
   background-color: $seafoam;
   border: none;
+  padding: 18px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  @media (min-width: $width-tablet) {
+    width: 350px;
+  }
 }
