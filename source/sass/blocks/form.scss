@@ -103,10 +103,6 @@
     padding-top: 50px;
     padding-bottom: 34px;
   }
-
-  // @media (min-width: $width-desktop) {
-  //   padding: 50px 175px 34px 63px;
-  // }
 }
 
 .form__fieldset--textarea {
@@ -218,15 +214,6 @@
   }
 }
 
-// .form__inner--radio {
-//   margin-bottom: 0;
-// }
-
-// .form__input--radio {
-//   appearance: none;
-//   opacity: 0;
-// }
-
 .form__row--radio {
   min-height: 61px;
 
@@ -240,7 +227,7 @@
   position: relative;
   cursor: pointer;
   padding: 12px 0 12px 63px;
-  // margin-bottom: -10px;
+  outline: none;
 
   @media (min-width: $width-tablet) {
     padding: 22px 0 22px 81px;
@@ -255,6 +242,7 @@
     width: 40px;
     height: 40px;
     border: 2px solid $text;
+    transition: 0.3s;
 
     @media (min-width: $width-tablet) {
       top: 7px;
@@ -277,6 +265,7 @@
     height: 16px;
     border-radius: 50%;
     background-color: $seafoam-two;
+    transition: 0.3s;
 
     @media (min-width: $width-tablet) {
       top: 23px;
@@ -289,6 +278,23 @@
       left: 18px;
     }
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border: 2px solid $seafoam-two;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
 }
 
 .form__input--radio:checked ~ .form__label--radio::after {
@@ -299,17 +305,12 @@
   opacity: 0.3;
 }
 
-// .form__input--checkbox {
-//   appearance: none;
-//   opacity: 0;
-// }
-
 .form__label--checkbox {
   display: block;
   position: relative;
   cursor: pointer;
   padding: 14px 0 10px 63px;
-  // margin-bottom: -10px;
+  outline: none;
 
   @media (min-width: $width-tablet) {
     padding: 18px 0 18px 81px;
@@ -327,6 +328,7 @@
     width: 40px;
     height: 40px;
     border: 2px solid $text;
+    transition: 0.3s;
 
     @media (min-width: $width-tablet) {
       width: 54px;
@@ -347,10 +349,11 @@
     left: 9px;
     width: 23px;
     height: 11px;
-    border: 2px solid $seafoam-two;
+    border: 2px solid $text;
     transform: rotate(-45deg);
     border-top-style: none;
     border-right-style: none;
+    transition: 0.3s;
 
     @media (min-width: $width-tablet) {
       left: 12px;
@@ -361,6 +364,20 @@
     @media (min-width: $width-desktop) {
       top: 13px;
       left: 19px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border: 2px solid $seafoam-two;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: 2px solid $text;
+      opacity: 0.3;
     }
   }
 }
@@ -399,6 +416,17 @@
   width: 100%;
   height: 52px;
   padding: 0 17px;
+  outline: none;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $seafoam-two;
+  }
+
+  // &:focus + svg {
+  //   fill: $seafoam-two;
+  // }
 
   // @media (min-width: $width-tablet) {
   //   padding-right: 0;
@@ -442,6 +470,7 @@
   position: absolute;
   top: 34px;
   right: 7px;
+  opacity: 0.2;
 
   @media (min-width: $width-tablet) {
     top: 8px;
@@ -461,6 +490,7 @@
   position: absolute;
   top: 34px;
   right: 4px;
+  opacity: 0.2;
 
   @media (min-width: $width-tablet) {
     top: 10px;
@@ -511,6 +541,8 @@
   width: 100%;
   height: 52px;
   padding-right: 40px;
+  outline: none;
+  transition: 0.3s;
 
   @media (min-width: $width-tablet) {
     @include text(19px, 18px);
@@ -520,6 +552,17 @@
   @media (min-width: $width-desktop) {
     @include text(19px, 18px);
     padding: 0 42px 0 19px;
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $seafoam-two;
+  }
+
+  &:hover + svg,
+  &:focus + svg {
+    fill: $seafoam-two;
+    opacity: 1;
   }
 }
 
@@ -566,9 +609,17 @@
   border: 2px solid $black;
   min-height: 142px;
   padding: 15px;
+  transition: 0.3s;
+  outline: none;
+  resize: none;
 
   @media (min-width: $width-desktop) {
     width: 700px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid $seafoam-two;
   }
 }
 

@@ -109,23 +109,47 @@
 
 .category__item--interior {
   background-color: $seafoam;
+  transition: 0.3s;
+
+  svg {
+    fill: $category-icon;
+    opacity: 0.5;
+    transition: 0.3s;
+  }
 
   &:hover,
   &:active {
     background-color: #59d5bc;
+    transform: translateY(-5px);
+
+    svg {
+      opacity: 0.7;
+    }
   }
 
   &:active {
     color: 0.3;
+
+    svg {
+      opacity: 0.3;
+    }
   }
 }
 
 .category__item--toy {
   background-color: $grenny;
+  transition: 0.3s;
+
+  svg {
+    fill: $category-icon;
+    opacity: 0.5;
+    transition: 0.3s;
+  }
 
   &:hover,
   &:active {
     background-color: #46c1ae;
+    transform: translateY(-5px);
 
     svg {
       opacity: 0.7;
