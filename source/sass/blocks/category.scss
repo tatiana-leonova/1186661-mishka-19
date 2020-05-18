@@ -14,7 +14,6 @@
       background-repeat: repeat-x;
       height: 17px;
       background-size: 768px 24px;
-      // background-position-x: -20px;
     }
 
     @media (min-width: $width-desktop) {
@@ -78,7 +77,6 @@
 
   @media (min-width: $width-desktop) {
     @include text(53px, 57px);
-    // padding-top: 95px;
     padding-top: 78px;
   }
 }
@@ -89,17 +87,12 @@
   @media (min-width: $width-tablet) {
     display: flex;
     justify-content: center;
-    // margin-top: -14px;
   }
 }
 
 .category__item {
-  // padding: 8px 32px 9px 30px;
-
   @media (min-width: $width-tablet) {
-    // width: 334px;
     width: 43.5%;
-    // padding: 8px 35px 15px 36px;
   }
 
   @media (min-width: $width-desktop) {

@@ -49,7 +49,6 @@
 
   @media (min-width: $width-desktop) {
     @include text(17px, 24px);
-    // margin-right: 34px;
     margin-bottom: 0;
   }
 }
@@ -59,18 +58,6 @@
     border-right: 1px solid $border-gray;
   }
 }
-
-// .site-list__item--top:not(:last-child) {
-//   @media (min-width: $width-desktop) {
-//     margin-right: 34px;
-//   }
-// }
-
-// .site-list__item--down:not(:last-child) {
-//   @media (min-width: $width-desktop) {
-//     margin-right: 26px;
-//   }
-// }
 
 .site-list__item--down {
   @media (min-width: $width-desktop) {
@@ -96,7 +83,6 @@
 
   @media (min-width: $width-desktop) {
     padding: 14px 36px 14px 26px;
-    // padding-left: 35px;
   }
 
   &:hover,
@@ -114,6 +100,5 @@
 
   @media (min-width: $width-desktop) {
     padding: 32px 36px 32px 35px;
-    // padding-left: 35px;
   }
 }

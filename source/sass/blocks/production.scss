@@ -65,7 +65,6 @@
     position: absolute;
     content: "";
     background-image: url("../img/icon-video.svg");
-    // background-color: $seafoam;
     width: 32px;
     height: 28px;
     top: 6px;
@@ -153,13 +152,11 @@
 
   @media (min-width: $width-tablet) {
     @include text(15px, 30px);
-    // order: 3;
     margin-top: 0;
     margin-bottom: 35px;
   }
 
   @media (min-width: $width-desktop) {
-    // width: 280px;
     margin-bottom: 46px;
   }
 }
@@ -170,7 +167,6 @@
   }
 
   @media (min-width: $width-tablet) {
-    // order: 4;
     margin: none;
   }
 }

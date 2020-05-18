@@ -6,18 +6,9 @@
     flex-wrap: wrap;
   }
 
-  // @media (min-width: $width-tablet) and (max-width: $width-tablet-only) {
-  //   align-items: center;
-  // }
-
-  @media (min-width: $width-tablet) {
-    // align-items: center;
-  }
-
   @media (min-width: $width-desktop) {
     max-width: $width-desktop;
     margin: 0 auto;
-    // margin-top: -13px;
   }
 }
 
@@ -140,8 +131,6 @@
     width: 48%;
     padding: 13px 50px;
     margin: 0;
-    // margin-bottom: 10px;
-    // max-width: 40%;
   }
 
   @media (min-width: $width-desktop) {
@@ -149,6 +138,5 @@
     width: 500px;
     margin-left: auto;
     padding: 12px 50px 12px 50px;
-    // margin-bottom: 0;
   }
 }

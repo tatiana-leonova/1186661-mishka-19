@@ -6,12 +6,6 @@
   }
 }
 
-// .form__wrapper {
-//   @media (min-width: $width-tablet) {
-//     display: flex;
-//   }
-// }
-
 .form__wrapper--radio {
   @media (min-width: $width-tablet) {
     display: flex;
@@ -79,10 +73,6 @@
     padding-top: 48px;
     padding-bottom: 28px;
   }
-
-  // @media (min-width: $width-desktop) {
-  //   padding-left: 60px;
-  // }
 }
 
 .form__fieldset--name {
@@ -90,12 +80,6 @@
     padding-top: 38px;
     padding-bottom: 21px;
   }
-
-  // @media (min-width: $width-desktop) {
-  //   padding: 38px 53px 21px 63px;
-  //   padding-top: 38px;
-  //   padding-bottom: 21px;
-  // }
 }
 
 .form__fieldset--contacts {
@@ -400,7 +384,6 @@
 }
 
 .form__row--name {
-  // padding-top: 20px;
   margin-bottom: 22px;
 
   @media (min-width: $width-tablet) {
@@ -427,14 +410,6 @@
   &:focus {
     border-bottom: 2px solid $seafoam-two;
   }
-
-  // &:focus + svg {
-  //   fill: $seafoam-two;
-  // }
-
-  // @media (min-width: $width-tablet) {
-  //   padding-right: 0;
-  // }
 }
 
 .form__label--name {
@@ -545,7 +520,6 @@
   width: 100%;
   height: 52px;
   padding: 12px 40px 12px 0;
-  // padding-right: 12px 12px 12px 40px;
   outline: none;
   transition: 0.3s;
 
