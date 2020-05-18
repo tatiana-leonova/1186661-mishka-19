@@ -547,15 +547,16 @@
 }
 
 .form__input {
-  &::placeholder {
-    @include text(17px, 18px);
-    font-family: $font;
-    font-weight: 400;
-    opacity: 0.3;
+  @include text(17px, 18px);
+  font-family: $font;
+  font-weight: 400;
 
-    @media (min-width: $width-tablet) {
-      @include text(19px, 18px);
-    }
+  @media (min-width: $width-tablet) {
+    @include text(19px, 18px);
+  }
+
+  &::placeholder {
+    opacity: 0.3;
   }
 }
 

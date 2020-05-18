@@ -192,4 +192,8 @@
     width: 175px;
     margin-left: auto;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 6px;
+  }
 }

@@ -39,6 +39,7 @@
     @include text(43px, 50px);
     margin: 0;
     margin-bottom: 49px;
+    padding-right: 80px;
 
     &::after {
       position: absolute;
@@ -54,6 +55,7 @@
   @media (min-width: $width-desktop) {
     @include text(53px, 57px);
     padding-left: 170px;
+    padding-right: 0;
 
     &::after {
       left: 64px;
