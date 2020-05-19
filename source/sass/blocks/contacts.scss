@@ -16,7 +16,7 @@
   }
 }
 
-.contacts_wrapper {
+.contacts__wrapper {
   margin-bottom: 35px;
 
   @media (min-width: $width-tablet) {
@@ -102,7 +102,7 @@
 
 .contacts__email-value {
   align-self: flex-start;
-  color: $black;
+  color: $text;
   text-decoration: none;
   border-bottom: 1px solid $seafoam-two;
   transition: 0.3s;
@@ -207,10 +207,12 @@
   text-align: center;
 
   @media (max-width: $width-tablet-only) {
+    @include text(18px, 20px);
     margin: 0 auto;
   }
 
   @media (min-width: $width-tablet) {
+    @include text(17px, 20px);
     width: 230px;
   }
 

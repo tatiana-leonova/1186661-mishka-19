@@ -2,6 +2,7 @@
   background-color: #f9f9f9;
   position: relative;
   margin-bottom: 27px;
+  overflow: hidden;
 
   &::after {
     @media (min-width: $width-tablet) {
@@ -26,10 +27,11 @@
 }
 
 .category__title-wrapper {
+  background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 19%;
-  height: 283px;
+  min-height: 283px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -38,7 +40,7 @@
   }
 
   @media (min-width: $width-tablet) {
-    height: 539px;
+    min-height: 539px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: center 42%;
 
@@ -50,7 +52,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    height: 551px;
+    min-height: 551px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: center 40%;
 
@@ -67,7 +69,7 @@
   font-weight: 700;
   color: $black;
   text-align: center;
-  margin-top: 0;
+  margin: 0;
   padding-top: 71px;
 
   @media (min-width: $width-tablet) {
@@ -78,6 +80,7 @@
   @media (min-width: $width-desktop) {
     @include text(53px, 57px);
     padding-top: 78px;
+    padding-bottom: 35px;
   }
 }
 
@@ -107,6 +110,7 @@
 .category__item-link--interior {
   background-color: $seafoam;
   transition: 0.3s;
+  position: relative;
 
   &::before {
     content: "";
@@ -153,6 +157,7 @@
 .category__item-link--toy {
   background-color: $grenny;
   transition: 0.3s;
+  position: relative;
 
   &::before {
     content: "";
@@ -196,9 +201,9 @@
   color: $white;
   text-decoration: none;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 8px 32px 9px 30px;
+  position: relative;
 
   @media (min-width: $width-tablet) {
     padding: 8px 35px 15px 36px;
@@ -218,4 +223,5 @@
 
 .category__item-icon {
   opacity: 0.5;
+  margin-left: auto;
 }

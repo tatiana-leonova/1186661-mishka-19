@@ -273,6 +273,7 @@
   &:active {
     &::before {
       opacity: 0.3;
+      border: 2px solid $text;
     }
 
     &::after {
@@ -281,12 +282,17 @@
   }
 }
 
-.form__input--radio:checked ~ .form__label--radio::after {
+.form__input--radio:checked + .form__label--radio::after {
   display: block;
 }
 
-.form__input--radio:disabled ~ .form__label--radio {
+.form__input--radio:disabled + .form__label--radio {
   opacity: 0.3;
+}
+
+.form__input--radio:focus + .form__label--radio::before {
+  outline: dotted 1px $seafoam;
+  outline-offset: 2px;
 }
 
 .form__label--checkbox {
@@ -366,12 +372,32 @@
   }
 }
 
-.form__input--checkbox:checked ~ .form__label--checkbox::after {
+.form__input--checkbox:checked + .form__label--checkbox::after {
   display: block;
 }
 
-.form__input--checkbox:disabled ~ .form__label--checkbox {
+.form__input--checkbox:disabled + .form__label--checkbox {
   opacity: 0.3;
+}
+
+.form__input--checkbox:focus + .form__label--checkbox::before {
+  outline: dotted 1px $seafoam;
+  outline-offset: 2px;
+}
+
+.form__input {
+  @include text(17px, 18px);
+  font-family: $font;
+  font-weight: 400;
+  color: $text;
+
+  @media (min-width: $width-tablet) {
+    @include text(19px, 18px);
+  }
+
+  &::placeholder {
+    opacity: 0.3;
+  }
 }
 
 .form__inner--name {
@@ -426,7 +452,11 @@
 }
 
 .form__inner--contacts {
-  padding-bottom: 15px;
+  padding-bottom: 33px;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 15px;
+  }
 }
 
 .form__row--contacts {
@@ -510,10 +540,12 @@
   @media (min-width: $width-desktop) {
     width: 100px;
     margin-right: 25px;
+    padding-bottom: 0;
   }
 }
 
 .form__input--contacts {
+  @include text(19px, 18px);
   border: 0;
   border-bottom: 2px solid $black;
   background-color: inherit;
@@ -524,13 +556,11 @@
   transition: 0.3s;
 
   @media (min-width: $width-tablet) {
-    @include text(19px, 18px);
     padding: 12px 60px 12px 19px;
     background-color: $border-gray;
   }
 
   @media (min-width: $width-desktop) {
-    @include text(19px, 18px);
     padding: 12px 42px 12px 19px;
   }
 
@@ -543,20 +573,6 @@
   &:focus + svg {
     fill: $seafoam-two;
     opacity: 1;
-  }
-}
-
-.form__input {
-  @include text(17px, 18px);
-  font-family: $font;
-  font-weight: 400;
-
-  @media (min-width: $width-tablet) {
-    @include text(19px, 18px);
-  }
-
-  &::placeholder {
-    opacity: 0.3;
   }
 }
 
@@ -592,7 +608,7 @@
 .form__input--textarea {
   width: 100%;
   border: 2px solid $black;
-  min-height: 142px;
+  height: 142px;
   padding: 15px;
   transition: 0.3s;
   outline: none;
