@@ -102,8 +102,21 @@
   padding: 18px;
   margin: 0 auto;
   margin-bottom: 20px;
+  cursor: pointer;
 
   @media (min-width: $width-tablet) {
     width: 350px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #59d5bc;
+    color: $white;
+    opacity: 0.9;
+  }
+
+  &:active {
+    background-color: #59d5bc;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
